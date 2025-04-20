@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример шаблона</title>
+</head>
+<body>
+    <h1 id='hi' >Привет, {{ name }}!</h1>
+    <p>Ваш возраст: {{ age }}</p>
+    <h3>Ваши навыки:</h3>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+<script>
+let element = document.getElementById('hi');
+element.addEventListener("click", handler);
+console.log('element', element)
+
+function handler() {
+    alert( 'Спасибо!' );
+}
+  
+
+</script>
+
+</html>
